@@ -1,8 +1,31 @@
 public class test {
     public static void main(String[] args) {
-        livre l1=new livre("ali","fOlen","java",100,12,0);
-        livre l2=new livre();
-        System.out.println("id="+ l1.id+" nom: "+ l1.nom+" preNom: "+ l1.preNom+" titre: "+ l1.titre+" prix: "+ l1.priX);
-        System.out.println("nombre des livre :"+livre.cont);
+        Point p = new Point();
+        Point q = new Point();
+
+        p.setCordonneePoint(3, 4);
+        q.setCordonneePoint(5, 6);
+
+        p.affichePoinet();
+        q.affichePoinet();
+
+        if(p.origine()){
+            System.out.println("le p est l'origine de repere");
+        }else {
+            System.out.println("le cord de p not null");
+        }
+         if(p.Egale(p)){
+             System.out.println("la point p egale");
+         }else {
+             System.out.println("la point deffirent ");
+         }
+         p.affichePoinet();
+         Point rs=p.symetrie();
+        System.out.println("symetrie de cette poit est :"+rs.abs);
+        System.out.println("le nombre de point ="+Point.nombre);
+
+
+
+
     }
 }
